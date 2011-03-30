@@ -1,0 +1,137 @@
+\documentclass[phd,tocprelim]{cornell}
+%
+% tocprelim option must be included to put the roman numeral pages in the
+% table of contents
+%
+% The cornellheadings option will make headings completely consistent with
+% guidelines.
+%
+% This sample document was originally provided by Blake Jacquot, and
+% fixed up by Andrew Myers.
+%
+%Some possible packages to include
+
+%\usepackage{graphicx,pstricks}
+%\usepackage{graphics}
+%\usepackage{moreverb}
+%\usepackage{subfigure}
+%\usepackage{subfigure}
+
+%\usepackage{subfig}
+\usepackage{epsfig}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{lscape}
+\usepackage{hangcaption}
+\usepackage{txfonts}
+\usepackage{palatino}
+\usepackage{longtable}
+\usepackage{chapterbib}
+\usepackage[round]{natbib}
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle={A Graph Theoretic Approach to Food Combination Problems},
+    pdfauthor={Michael Arden Nestrud},
+    pdfsubject={Sensory Evaluation},
+    pdfkeywords={sensory,graph theory,combinations,menus},
+    linktoc=all, %link table of contents to body
+    pagebackref=TRUE, %link references back to pages
+    pdfpagelabels=TRUE, %renumber pdf pages correctly
+    colorlinks,%no boxes
+    citecolor=black,%make all links black
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\usepackage{ifthen} 
+\renewcommand{\caption}[2][]{\singlespacing\ifthenelse{\equal{}{#1}}{\hangcaption{#2}}{\hangcaption[#1]{#2}}\normalspacing} 
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+%\newcommand{\the}[0]{\superscript{th}}
+\newcommand{\st}[0]{\superscript{st}}
+\newcommand{\nd}[0]{\superscript{nd}}
+\newcommand{\rd}[0]{\superscript{rd}}
+\newcommand{\tm}[0]{\superscript{TM}}
+
+%if you're having problems with overfull boxes, you may need to increase
+%the tolerance to 9999
+\tolerance=9999
+
+
+%\bibliographystyle{IEEEbib}
+
+%\renewcommand{\caption}[1]{\singlespacing\hangcaption{#1}\normalspacing}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+
+\title {A Graph Theoretic Approach to Food Combination Problems}
+\author {Michael Arden Nestrud}
+\conferraldate {May}{2011}
+\degreefield {Ph.D.}
+\copyrightholder{Michael Arden Nestrud}
+\copyrightyear{2011}
+
+\begin{document}
+
+\phantomsection
+\maketitle
+\phantomsection
+\makecopyright
+\phantomsection
+\begin{abstract}
+
+%\addcontentsline{toc}{subsection}{Abstract} %  adds "REFERENCES" to the table of content
+Graph theory provides a useful representation of, and mathematical toolkit for, analyzing how things are connected together.  This collection of research investigates the use of graph theory as a representation of how foods are connected together.  The first two studies validate the subject questioning procedure used to create a graph model out of responses and the final study introduces a new approach to using this methodology to optimize field ration menus for the United States Army.
+
+In the first study, we began by asking subjects whether or not pairs of ingredients would be appropriate to combine on a salad. Next, using graph theoretic methods, we predicted which combinations of 3-8 components should go together.  Subjects were then asked whether or not particular combinations were appropriate to combine on a salad. A paired Wilcoxon test between the predicted and non-predicted combinations was significant for all combination sizes.
+
+The second study tested the principle of supercombinatorality, i.e. that food combinations (of more than two items) that are fully compatible on a pairwise basis are more compatible than combinations that are not fully compatible pairwise. This study extended the previous findings to group data. Purchase intent responses to pairs of different pizza toppings were collected and used to predict pizzas (with one to 6 toppings) that would appeal to the entire group. Results showed purchase interest to be higher for the predicted pizzas than for non predicted pizzas supporting the supercombinatorality principle. 
+
+The final study extends the graph theory representation to military rations known as Meal-Ready-to-Eat or MREs™.  MRE™ menus are composed of 11 different food categories (entrée, side, snack, etc.) and there are multiple items available in each category.  From these items there are over 22 billion potential menus.  Categories and items were screened to create a list of the most important ones and we asked soldiers whether or not pairwise combinations of components were appropriate to combine in a meal.  Using graph theoretic tools, predictions were made of optimal MRE™ menus and rankings were attached to prediction in order to assist the product developers in screening old and new menu concepts. 
+\end{abstract}
+
+\phantomsection
+\begin{biosketch}
+Michael Arden Nestrud grew up in Little Rock, Arkansas.  Prior to coming to Cornell Michael received an Associates of Occupational Studies in Culinary Arts at the Culinary Institute of America and was a Teaching Fellow at the American Bounty Restaurant from 2004-2005.  He completed his Bachelor of Science in Food Science from Cornell University and graduated magna cum laude in 2008.  
+\end{biosketch}
+\phantomsection
+\begin{dedication}
+This work is dedicated to my beautiful and loving wife, Effie.
+\end{dedication}
+\phantomsection
+\begin{acknowledgements}
+
+I would like to thank Dr. Harry Lawless, for being a teacher, mentor, friend and match-maker for all the years we’ve been working together.  I look forward to continuing our friendship.  I owe Dr. Bruce Halpern for his encouragement and advice throughout my time at Cornell.  Dr. Terry Acree's advice, wit and candidness has improved my research skills and my gratitude goes to Dr. Paul Velleman for sharing some of his incredible statistical knowledge with me during the course of my Ph. D. work.  
+
+There are a few individuals whose assistance has been greatly appreciated.  I owe Dr. John Ennis for his combinatorial expertise and kind encouragement.  I appreciate the mentorship of Dr. Armand Cardello and Dr. Daniel Ennis.  At Cornell, thank you Kathy, Marva, Janette, Matt, Shelly, Denise and all of the professors and labmates whom have aided me over the years.  
+
+I owe a special thanks to my favorite labmate,  Effie (Epke) Nestrud.  Had she not chosen to go to Cornell for her graduate work my life would not be the same.  Her patience, support and smile means more to me than anyone will ever know.  I love you.
+
+\end{acknowledgements}
+\phantomsection
+\contentspage
+\phantomsection
+\tablelistpage
+\phantomsection
+\figurelistpage
+
+\normalspacing \setcounter{page}{1} \pagenumbering{arabic}
+\pagestyle{cornell} \addtolength{\parskip}{0.5\baselineskip}
+
+\include{introduction}
+
+\include{study_objectives}
+
+\include{chapter_3}
+\include{chapter_4}
+\include{chapter_5}
+
+\include{discussion}
+
+
+\end{document}
