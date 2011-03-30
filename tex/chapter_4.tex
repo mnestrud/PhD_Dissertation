@@ -193,7 +193,7 @@ An analysis of the internet pre-survey data provides information about peoples�
 \caption[The number of toppings people chose in free-choice portion of experiment.]{In the scenario where people chose their preferred pizza freely this is the distribution of  the number of toppings that people chose.  The dotted line is the median (3), while the dashed line is the mean (3.2).}
 \label{fig:pizztoppings}
 \centering
-\includegraphics[width=0.9\textwidth]{Figure41.png}
+\includegraphics[width=0.9\textwidth]{./img/Figure41.png}
 \end{figure}
 
 Part 1 of the survey was completed in 20-35 minutes for each subject.  Figure~\ref{fig:pizzsize} is a histogram showing the number of compatible pairs by percentages of responses.  As mentioned above, we adjusted our threshold to 78 out of 124 panelists, which means that a proportion of people equal to 0.629 had to agree that a pair was compatible for it to be counted as an edge.  An alternative thresholding strategy could decide a threshold based on the proportion itself rather than size of the combination (essentially our method in reverse).  This would allow the investigator to say “we only want pairs accepted by 75\% of the population.”  Dangers of setting the threshold too high or too low are evident in Figure~\ref{fig:pizzsize}.  If the threshold is too strict, Type II error becomes a danger and if it is too lenient Type I error becomes a concern.  As the threshold goes up, you are more likely to miss combinations that may be acceptable.  As the threshold goes down, less compatible cliques are likely to emerge in to the results.  This risk assessment is an important aspect of the experimental design.
@@ -202,7 +202,7 @@ Part 1 of the survey was completed in 20-35 minutes for each subject.  Figure~\r
 \caption[The distribution of responses from Part 1 of the survey.]{The distribution of responses from  Part 1 of the survey.  This shows the number of pairs that people determined were compatible.  The mean proportion was 0.50.}
 \label{fig:pizzsize}
 \centering
-\includegraphics[width=0.9\textwidth]{Figure42.png}
+\includegraphics[width=0.9\textwidth]{./img/Figure42.png}
 \end{figure}
 
 Once our threshold was applied, 50 out of 300 compatible pairs moved forward in the analysis.  Figure~\ref{fig:pizzedge} shows a graph with edges of the 50 pairs that were used to find larger combinations of compatible pizza toppings. It is evident from this graph that weakly connected toppings like pineapple and red onion are liked in combination with few ingredients, as opposed to ingredients like pepperoni and roasted garlic.  Ingredients such as anchovy and prosciutto that are not connected to other ingredients tend to be liked, but only by themselves (or with ingredients not in our top twenty-five).  From this graph we found the complete set of non-cliques, non-maximal cliques and cliques from sizes one through six.
@@ -233,7 +233,7 @@ The results provide evidence in favor of the SC property.  The overall proportio
 \caption[Edge graph based on thresholded pairwise responses from part 1]{Edge graph based on thresholded pairwise responses from part 1.  Highly connected toppings are highly compatible.}
 \label{fig:pizzedge}
 \centering
-\includegraphics[width=0.9\textwidth]{Figure43.png}
+\includegraphics[width=0.9\textwidth]{./img/Figure43.png}
 \end{figure}
 
 Figure~\ref{fig:pizzdist} shows the average counts of the number of times a pizza with a given number of toppings was chosen to be compatible for each of the three groups.  As noted above, the max clique of size one is distanced from the rest of the clique responses because these ingredients are polarizing.  The Tukey quick test was designed to assess whether or not two distributions are separated.  There is no significant difference between the maximal-clique and the non-maximal clique groups.  Formal statistical tests cannot be performed to test the difference between the non-cliques and each of the clique groups because the non-parametric tests, including the Wilcox or the Tukey quick test, require that the distributions overlap.  As these distributions do not overlap, we can conclude that the distributions are in fact different and that there is evidence in support of the SC effect.  
@@ -242,7 +242,7 @@ Figure~\ref{fig:pizzdist} shows the average counts of the number of times a pizz
 \caption[Distribution of average counts of compatible pizzas.]{M:max cliques, C:non-max cliques, N:non-cliques.  Distribution of average counts of compatible pizzas.  Non-cliques were liked less than cliques or max cliques.  There is no difference between the non-max clique and max-clique distributions.}
 \label{fig:pizzdist}
 \centering
-\includegraphics[width=0.9\textwidth]{Figure44.png}
+\includegraphics[width=0.9\textwidth]{./img/Figure44.png}
 \end{figure}
 
 The combinatorial approach of \citet{Ennis2010} holds promise in allowing food product developers to gain information regarding a large number of food item combinations in a cost efficient manner.  Even so, this technique rests on the crucial SC assumption that needs to be validated before this approach can be confidently employed.  Previously, SC was validated at the individual level \citep{Nestrud2010a}. The research communicated in this present paper demonstrates that SC holds in a group setting and for a different product category.  In this case, the graph theoretic tools allowed us to screen almost a quarter of a million possible combinations down to twenty-one cliques, which were then shown to be of high quality in subsequent testing.  Importantly, these results were obtained in under 30 minutes by asking respondents to generate only three hundred binary responses. 
