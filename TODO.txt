@@ -1,0 +1,2 @@
+Convert Figures to eps where available
+Fix entre vs entree
